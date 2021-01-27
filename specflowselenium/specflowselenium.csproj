@@ -47,6 +47,9 @@
     <Reference Include="Dynamitey, Version=2.0.9.136, Culture=neutral, PublicKeyToken=cbf53ea3aeb972c6, processorArchitecture=MSIL">
       <HintPath>packages\Dynamitey.2.0.9.136\lib\net40\Dynamitey.dll</HintPath>
     </Reference>
+    <Reference Include="FluentAssertions, Version=5.10.3.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>packages\FluentAssertions.5.10.3\lib\net45\FluentAssertions.dll</HintPath>
+    </Reference>
     <Reference Include="Gherkin, Version=6.0.0.0, Culture=neutral, PublicKeyToken=86496cfa5b4a5851, processorArchitecture=MSIL">
       <HintPath>packages\Gherkin.6.0.0\lib\net45\Gherkin.dll</HintPath>
     </Reference>
@@ -61,6 +64,7 @@
       <HintPath>packages\SpecFlow.Assist.Dynamic.1.4.1\lib\472\SpecFlow.Assist.Dynamic.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -69,6 +73,8 @@
     <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.ValueTuple.4.4.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="TechTalk.SpecFlow, Version=3.0.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
       <HintPath>packages\SpecFlow.3.0.225\lib\net45\TechTalk.SpecFlow.dll</HintPath>
     </Reference>
@@ -84,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bindings\SpecflowBindings.cs" />
+    <Compile Include="Extensions\WebDriverExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
