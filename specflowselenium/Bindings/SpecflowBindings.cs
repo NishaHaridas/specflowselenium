@@ -39,12 +39,18 @@
         [Then(@"the '(.*)' box must contain '(.*)' at index '(.*)'")]
         public void ThenTheBoxMustContainAtIndex(string domainNameBox, string linkName, int index)
         {
-            
+
             var domainNameListBoxElement = Driver.FindElement(By.XPath($"//div[@id='sidebar_left']/div[@class='navigation_box']/h2"), 5);
             domainNameListBoxElement.Text.Should().Be(domainNameBox);
 
             var domainNameList2ndElement = Driver.FindElement(By.XPath($"//div[@id='sidebar_left']/div[@class='navigation_box']/ul/li[{index}]"), 5);
             domainNameList2ndElement.Text.Should().Be(linkName);
+
+        }
+        [AfterScenario]
+        public void DisposeBrowser()
+        {
+            Driver.Dispose();
         }
     }
 }
